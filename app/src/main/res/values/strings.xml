@@ -1,16 +1,11 @@
 <resources>
-    <!-- Title for the application. [CHAR LIMIT=12] -->
-    <string name="app_name">Miwok</string>
+    <string name="app_name">APP Music</string>
 
-    <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="category_phrases">Phrases</string>
+    <string name="categoria_albuns">Álbuns</string>
 
-    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">Colors</string>
-
-    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
     <string name="categoria_favoritas">Favoritas</string>
 
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Dowloads</string>
+    <string name="categoria_dowloads">Dowloads</string>
+
+    <string name="categoria_artista">Artista</string>
 </resources>

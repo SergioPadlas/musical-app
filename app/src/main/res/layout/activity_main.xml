@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/favoritas"
+        style="@style/CategoryStyle"
+        android:background="@color/category_favoritas"
         android:text="@string/categoria_favoritas" />
+
+    <TextView
+        android:id="@+id/dowloads"
+        style="@style/CategoryStyle"
+        android:background="@color/category_dowloads"
+        android:text="@string/categoria_dowloads" />
+
+    <TextView
+        android:id="@+id/albuns"
+        style="@style/CategoryStyle"
+        android:background="@color/category_albuns"
+        android:text="@string/categoria_albuns" />
+
+    <TextView
+        android:id="@+id/artista"
+        style="@style/CategoryStyle"
+        android:background="@color/categoria_artista"
+        android:text="@string/categoria_artista" />
+
 
 </LinearLayout>
