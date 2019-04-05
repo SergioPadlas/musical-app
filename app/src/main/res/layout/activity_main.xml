@@ -12,7 +12,8 @@
         android:id="@+id/favoritas"
         style="@style/CategoryStyle"
         android:background="@color/category_favoritas"
-        android:drawableLeft="@drawable/ic_favorite_black_24dp"
+        android:drawableLeft ="@drawable/ic_favorite_black_24dp"
+        android:onClick="abrirFavoritas"
         android:text="@string/categoria_favoritas" />
 
     <TextView
@@ -20,6 +21,7 @@
         style="@style/CategoryStyle"
         android:background="@color/category_dowloads"
         android:text="@string/categoria_dowloads"
+        android:onClick="abrirDowloads"
         android:drawableLeft="@drawable/ic_file_download_black_24dp"/>
 
     <TextView
@@ -27,6 +29,7 @@
         style="@style/CategoryStyle"
         android:background="@color/category_albuns"
         android:text="@string/categoria_albuns"
+        android:onClick="abrirAlbuns"
         android:drawableLeft="@drawable/ic_album_black_24dp"/>
 
     <TextView
@@ -34,6 +37,7 @@
         style="@style/CategoryStyle"
         android:background="@color/categoria_artista"
         android:text="@string/categoria_artista"
+        android:onClick="abrirArtistas"
         android:drawableLeft="@drawable/ic_group_black_24dp"/>
 
 

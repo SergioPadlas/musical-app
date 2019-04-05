@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ArtistasActivity" android:label="@string/categoria_artista"></activity>
+        <activity android:name=".AlbunsActivity" android:label="@string/categoria_albuns" />
+        <activity android:name=".DowloadsActivity" android:label="@string/categoria_dowloads" />
+        <activity android:name=".FavoritasActivity" android:label="@string/categoria_favoritas" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
