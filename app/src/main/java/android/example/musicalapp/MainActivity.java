@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,26 +13,44 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+
+        TextView favoritas = findViewById(R.id.favoritas);
+        favoritas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent favoritasIntent = new Intent(MainActivity.this, FavoritasActivity.class);
+                startActivity(favoritasIntent);
+            }
+        });
+
+        TextView dowloads = findViewById(R.id.dowloads);
+        dowloads.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent dowloadsIntent = new Intent(MainActivity.this, DowloadsActivity.class);
+                startActivity(dowloadsIntent);
+            }
+        });
+
+        TextView albuns = findViewById(R.id.albuns);
+        albuns.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent albunsIntent = new Intent(MainActivity.this, AlbunsActivity.class);
+                startActivity(albunsIntent);
+            }
+        });
+
+        TextView artista = findViewById(R.id.artistas);
+        artista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent artistaIntent = new Intent(MainActivity.this, ArtistasActivity.class);
+                startActivity(artistaIntent);
+            }
+        });
 
 
-    public void abrirFavoritas (View view){
-        Intent favoritas = new Intent(this, FavoritasActivity.class);
-        startActivity(favoritas);
     }
 
-    public void abrirDowloads (View view){
-        Intent dowloads = new Intent(this, DowloadsActivity.class);
-        startActivity(dowloads);
-    }
-
-    public void abrirAlbuns (View view){
-        Intent albuns = new Intent(this, AlbunsActivity.class);
-        startActivity(albuns);
-    }
-
-    public void abrirArtistas (View view){
-        Intent artistas = new Intent(this, ArtistasActivity.class);
-        startActivity(artistas);
-    }
 }
