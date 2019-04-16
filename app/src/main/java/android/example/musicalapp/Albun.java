@@ -9,7 +9,6 @@ public class Albun {
         mDefaultAlbun = defaultAlbun;
         mDefaultArtista = defaultArtista;
     }
-
         public String getDefaultAlbun(){
             return mDefaultAlbun;
         }
